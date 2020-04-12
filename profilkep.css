@@ -1,0 +1,96 @@
+/* CSS Document */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('kepek/space.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+a:link {
+  color: rgb(30,144,255);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0,191,255);
+  text-decoration: underline;
+}
+a:visited {
+  color: rgb(139,69,19);
+}
+h1 {
+  color: rgb(20,30,30);
+  font-family: Georgia;
+  font-size: 2rem;
+  word-spacing: .55rem;
+  letter-spacing: .25rem;
+  padding: 2.5rem 0 1.5rem;
+  text-shadow: 0 0 .75rem rgb(30,144,255), 0 0 1rem rgb(30,144,255);
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+}
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0 1.5rem;
+}
+footer {
+  width: 80%;
+  margin: 0 auto;
+  border-top: .05rem solid rgb(149,191,191);
+  font-size: .85rem;
+  color: rgb(119,136,153);
+  font-family: serif;
+  padding: .25rem;
+}
+main {
+  width: 400px;
+  margin: 0 auto;
+}
+#profillap {
+  width: 40.75rem;
+  max-width: calc(100vw - 3.125rem);
+  background-color: rgba(250,240,230,.75);
+  border-radius: 1.56rem;
+  box-shadow:  0 0 3.5rem .35rem rgb(0,0,0);
+  border: .15rem solid rgb(47,79,79);
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.container {
+  position: relative;
+}
+.image {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto; 
+  display: block;
+  width: 400px;
+  height: 400px;
+  border: .15rem solid rgba(47,79,79,.75);
+  border-radius: 25px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 400px;
+  width: 400px;
+  opacity: 0;
+  transition: 1s ease;
+  background:  url('kepek/cat+.jpg');
+  border: .15rem solid rgba(47,79,79,1);
+  border-radius: 25px;
+  box-shadow:  0 0 1.25rem .25rem rgba(47,79,79,.75);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
